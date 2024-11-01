@@ -1,31 +1,23 @@
 using UnityEngine;
 
-public class Player : MonoBehaviour{
-    public static Player Instance;
+public class Player : MonoBehaviour
+{
     private PlayerMovement playerMovement;
     private Animator animator;
 
-    private void Awake(){
-        if (Instance == null){
-            Instance = this;
-        }
-        else{
-            Destroy(gameObject);
-        }
-    }
-
-    private void Start(){
+    private void Start()
+    {
         playerMovement = GetComponent<PlayerMovement>();
-        animator = GetComponent<Animator>();
+        animator = transform.Find("Engine/EngineEffect").GetComponent<Animator>();
     }
 
-    private void FixedUpdate(){
+    private void FixedUpdate()
+    {
         playerMovement.Move();
     }
 
-    private void LateUpdate(){
-        if(animator != null){
-            animator.SetBool("IsMoving", playerMovement.IsMoving());
-        }
+    private void LateUpdate()
+    {
+        animator.SetBool("IsMoving", playerMovement.IsMoving());
     }
 }
