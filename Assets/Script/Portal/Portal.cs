@@ -71,7 +71,7 @@ public class Portal : MonoBehaviour
 
     void ChangePosition()
     {
-        newPosition = new Vector2(Random.Range(-10f, 10f), Random.Range(-10f, 10f));
+        newPosition = new Vector2(Random.Range(-10f, 10f), Random.Range(-7f, 7f));
     }
 
 

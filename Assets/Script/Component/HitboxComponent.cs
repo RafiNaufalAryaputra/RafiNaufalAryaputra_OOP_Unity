@@ -4,7 +4,7 @@ using UnityEngine;
 public class HitboxComponent : MonoBehaviour
 {
     [SerializeField] private HealthComponent healthComponent;
-
+    private HealthComponent health;
     private void Awake()
     {
         if (healthComponent == null)
@@ -15,6 +15,12 @@ public class HitboxComponent : MonoBehaviour
 
     public void Damage(int damage)
     {
+        InvincibilityComponent invincibility = GetComponent<InvincibilityComponent>();
+        if (invincibility == null && !invincibility.IsInvincible())
+        {
+            health.Subtract(damage);
+        }
+
         healthComponent.Subtract(damage);
     }
 
@@ -29,7 +35,6 @@ public class HitboxComponent : MonoBehaviour
         if (bullet != null)
         {
             Damage(bullet);
-            // Setelah mengurangi health, kita bisa menghapus atau me-*recycle* bullet
             bullet.gameObject.SetActive(false);
         }
     }

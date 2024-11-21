@@ -1,0 +1,275 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3449682640421328981
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4330957328399016586}
+  - component: {fileID: 4248025401557341219}
+  m_Layer: 0
+  m_Name: CombatManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4330957328399016586
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3449682640421328981}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -8.275098, y: -2.2427034, z: -9.028473}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3411609819103683964}
+  - {fileID: 5353081652169849823}
+  - {fileID: 3605823020464621985}
+  - {fileID: 2343027422243024360}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4248025401557341219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3449682640421328981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ffddb3e891b8e24a94d1ab7aa54dd78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemySpawners:
+  - {fileID: 2479508824931396219}
+  - {fileID: 4678661117828711360}
+  - {fileID: 4084328320913256894}
+  - {fileID: 5936763107613337481}
+  timer: 0
+  waveInterval: 3
+  waveNumber: 1
+  totalEnemies: 0
+--- !u!1 &3959991762417960303
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5353081652169849823}
+  - component: {fileID: 4084328320913256894}
+  m_Layer: 0
+  m_Name: EnemyTargetingSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5353081652169849823
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3959991762417960303}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 8.275098, y: 2.2427034, z: 9.028473}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4330957328399016586}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4084328320913256894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3959991762417960303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3284bac0c0805c0469b948d9ec2f0c04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnedEnemy: {fileID: 7301932657635322378, guid: 270a1472b013cca44b37d7851e135293, type: 3}
+  minimumKillsToIncreaseSpawnCount: 6
+  totalKill: 0
+  spawnInterval: 3
+  spawnCount: 2
+  defaultSpawnCount: 2
+  spawnCountMultiplier: 1
+  multiplierIncreaseCount: 1
+  combatManager: {fileID: 4248025401557341219}
+  isSpawning: 1
+--- !u!1 &5672059493431883537
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3605823020464621985}
+  - component: {fileID: 4678661117828711360}
+  m_Layer: 0
+  m_Name: EnemyForwardSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3605823020464621985
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5672059493431883537}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 8.275098, y: 2.2427034, z: 9.028473}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4330957328399016586}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4678661117828711360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5672059493431883537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3284bac0c0805c0469b948d9ec2f0c04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnedEnemy: {fileID: 1142439199182031168, guid: 62d32a1b5348eb04bafc453b963c8ab1, type: 3}
+  minimumKillsToIncreaseSpawnCount: 6
+  totalKill: 0
+  spawnInterval: 3
+  spawnCount: 2
+  defaultSpawnCount: 2
+  spawnCountMultiplier: 1
+  multiplierIncreaseCount: 1
+  combatManager: {fileID: 4248025401557341219}
+  isSpawning: 1
+--- !u!1 &5756813032189963710
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3411609819103683964}
+  - component: {fileID: 2479508824931396219}
+  m_Layer: 0
+  m_Name: EnemyHorizontalSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3411609819103683964
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5756813032189963710}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 8.275098, y: 2.2427034, z: 9.028473}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4330957328399016586}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2479508824931396219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5756813032189963710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3284bac0c0805c0469b948d9ec2f0c04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnedEnemy: {fileID: 2987869871015323574, guid: 23ee6e46590fbfd4f83f78845071a151, type: 3}
+  minimumKillsToIncreaseSpawnCount: 6
+  totalKill: 0
+  spawnInterval: 3
+  spawnCount: 2
+  defaultSpawnCount: 2
+  spawnCountMultiplier: 1
+  multiplierIncreaseCount: 1
+  combatManager: {fileID: 4248025401557341219}
+  isSpawning: 1
+--- !u!1 &6645443771289867096
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2343027422243024360}
+  - component: {fileID: 5936763107613337481}
+  m_Layer: 0
+  m_Name: EnemyBossSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2343027422243024360
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6645443771289867096}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 8.275098, y: 2.2427034, z: 9.028473}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4330957328399016586}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5936763107613337481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6645443771289867096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3284bac0c0805c0469b948d9ec2f0c04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnedEnemy: {fileID: -5219962289968016653, guid: 858b825aabd5d7446b8773ca35ca8d48, type: 3}
+  minimumKillsToIncreaseSpawnCount: 6
+  totalKill: 0
+  spawnInterval: 3
+  spawnCount: 2
+  defaultSpawnCount: 2
+  spawnCountMultiplier: 1
+  multiplierIncreaseCount: 1
+  combatManager: {fileID: 4248025401557341219}
+  isSpawning: 1

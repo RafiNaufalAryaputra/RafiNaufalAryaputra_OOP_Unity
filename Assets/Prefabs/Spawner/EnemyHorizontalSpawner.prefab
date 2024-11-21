@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5922478144186930249
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3642542951439768715}
+  - component: {fileID: 4592665216188683148}
+  m_Layer: 0
+  m_Name: EnemyHorizontalSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3642542951439768715
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5922478144186930249}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 8.275098, y: 2.2427034, z: 9.028473}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4592665216188683148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5922478144186930249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3284bac0c0805c0469b948d9ec2f0c04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnedEnemy: {fileID: 2987869871015323574, guid: 23ee6e46590fbfd4f83f78845071a151, type: 3}
+  minimumKillsToIncreaseSpawnCount: 6
+  totalKill: 0
+  spawnInterval: 3
+  spawnCount: 2
+  defaultSpawnCount: 2
+  spawnCountMultiplier: 1
+  multiplierIncreaseCount: 1
+  combatManager: {fileID: 4248025401557341219, guid: 8f21f10d0518a784ea60c7911399e54a, type: 3}
+  isSpawning: 1

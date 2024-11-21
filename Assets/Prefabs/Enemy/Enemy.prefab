@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: -6283569612737884316}
   - component: {fileID: -7485165672511536059}
   - component: {fileID: 3088979643460088104}
+  - component: {fileID: -3611363832966493032}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -32,7 +33,7 @@ Transform:
   m_GameObject: {fileID: 1366660263748305120}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.73836946, y: 0.45585144, z: -9.038628}
+  m_LocalPosition: {x: 0.09, y: 1.7, z: -9.038628}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -94,11 +95,11 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.5, y: 1}
+  m_Offset: {x: 0, y: 0.40021825}
+  m_Size: {x: 0.5, y: 0.64570856}
   m_Direction: 0
 --- !u!212 &3894791722805092013
 SpriteRenderer:
@@ -164,7 +165,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1354ffcc08e8994683c23d4730ca52c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  level: 5
+  level: 3
 --- !u!114 &-6283569612737884316
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -177,7 +178,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90ea3b85bbd76f24f9dbea703747225e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 0}
+  bulletPrefab: {fileID: 3692161530809932357, guid: e44beea5b63a2b243b859200f0c4de55, type: 3}
   damage: 10
 --- !u!114 &-7485165672511536059
 MonoBehaviour:
@@ -205,3 +206,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthComponent: {fileID: -7485165672511536059}
+--- !u!114 &-3611363832966493032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1366660263748305120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7218e76a15ba22e44bc83017ce917269, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blinkingCount: 7
+  blinkInterval: 0.1
+  blinkMaterial: {fileID: 2100000, guid: 753b22163503332489c7a73b9f76b9fb, type: 2}

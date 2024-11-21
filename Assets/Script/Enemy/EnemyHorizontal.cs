@@ -14,7 +14,7 @@ public class EnemyHorizontal : Enemy
         horizontal = new Vector2(spawnSide, 0);
 
         // Set posisi spawn dan arah gerakan
-        transform.position = new Vector3(spawnSide * 10, Random.Range(-5f, 5f), 0);
+        transform.position = new Vector3(spawnSide * 10, Random.Range(-2f, 4.5f), 0);
         rb.velocity = horizontal * speed;
     }
 

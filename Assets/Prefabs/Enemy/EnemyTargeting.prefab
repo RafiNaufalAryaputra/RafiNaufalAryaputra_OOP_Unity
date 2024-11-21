@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: -3057923015666713261}
   - component: {fileID: -3641853656548631498}
   - component: {fileID: 1210062529338264000}
+  - component: {fileID: 948689397381057330}
   m_Layer: 0
   m_Name: EnemyTargeting
   m_TagString: Untagged
@@ -94,11 +95,11 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.5, y: 1}
+  m_Offset: {x: 0, y: 0.4088446}
+  m_Size: {x: 0.5, y: 0.5}
   m_Direction: 0
 --- !u!212 &4162684938907519069
 SpriteRenderer:
@@ -164,8 +165,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e782a03abb8bbf042b2c0cf4faf59554, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  level: 0
-  Player: {fileID: 3375559312556918784, guid: 04d483adafeb5864fa558fdda324d21e, type: 3}
+  Level: 3
+  enemySpawner: {fileID: 8037434853640424975, guid: fa2ae5326c3bd8b42a0f54eddedbe738, type: 3}
+  combatManager: {fileID: 4248025401557341219, guid: 8f21f10d0518a784ea60c7911399e54a, type: 3}
+  Player: {fileID: 0}
   speed: 5
 --- !u!114 &-3057923015666713261
 MonoBehaviour:
@@ -180,7 +183,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 0}
-  damage: 10
 --- !u!114 &-3641853656548631498
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -207,3 +209,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthComponent: {fileID: -3641853656548631498}
+--- !u!114 &948689397381057330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3616794988052299563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7218e76a15ba22e44bc83017ce917269, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blinkingCount: 7
+  blinkInterval: 0.1
+  blinkMaterial: {fileID: 2100000, guid: 753b22163503332489c7a73b9f76b9fb, type: 2}
