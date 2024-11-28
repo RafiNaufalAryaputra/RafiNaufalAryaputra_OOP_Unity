@@ -522,7 +522,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Level: 4
-  enemySpawner: {fileID: 8037434853640424975, guid: b181c12c3eccde84c8309300b0a23d9a, type: 3}
+  enemySpawner: {fileID: 6337836578230559164, guid: b181c12c3eccde84c8309300b0a23d9a, type: 3}
   combatManager: {fileID: 4248025401557341219, guid: 8f21f10d0518a784ea60c7911399e54a, type: 3}
   bossWeapon: {fileID: 1253482594127199190, guid: f2dc139b4d0778142b320b3852e64b05, type: 3}
   attackInterval: 3
@@ -539,7 +539,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfc674ad79bb42445959f2fc27202504, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 700
+  maxHealth: 500
 --- !u!114 &9074590483369779520
 MonoBehaviour:
   m_ObjectHideFlags: 0

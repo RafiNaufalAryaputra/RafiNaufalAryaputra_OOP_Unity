@@ -169,7 +169,7 @@ MonoBehaviour:
   enemySpawner: {fileID: 8037434853640424975, guid: fa2ae5326c3bd8b42a0f54eddedbe738, type: 3}
   combatManager: {fileID: 4248025401557341219, guid: 8f21f10d0518a784ea60c7911399e54a, type: 3}
   Player: {fileID: 0}
-  speed: 5
+  speed: 2
 --- !u!114 &-3057923015666713261
 MonoBehaviour:
   m_ObjectHideFlags: 0

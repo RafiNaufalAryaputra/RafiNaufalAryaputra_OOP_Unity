@@ -54,7 +54,7 @@ MonoBehaviour:
   - {fileID: 4084328320913256894}
   - {fileID: 5936763107613337481}
   timer: 0
-  waveInterval: 3
+  waveInterval: 5
   waveNumber: 1
   totalEnemies: 0
 --- !u!1 &3959991762417960303
@@ -105,8 +105,8 @@ MonoBehaviour:
   minimumKillsToIncreaseSpawnCount: 6
   totalKill: 0
   spawnInterval: 3
-  spawnCount: 2
-  defaultSpawnCount: 2
+  spawnCount: 6
+  defaultSpawnCount: 6
   spawnCountMultiplier: 1
   multiplierIncreaseCount: 1
   combatManager: {fileID: 4248025401557341219}
@@ -159,8 +159,8 @@ MonoBehaviour:
   minimumKillsToIncreaseSpawnCount: 6
   totalKill: 0
   spawnInterval: 3
-  spawnCount: 2
-  defaultSpawnCount: 2
+  spawnCount: 6
+  defaultSpawnCount: 6
   spawnCountMultiplier: 1
   multiplierIncreaseCount: 1
   combatManager: {fileID: 4248025401557341219}
@@ -213,8 +213,8 @@ MonoBehaviour:
   minimumKillsToIncreaseSpawnCount: 6
   totalKill: 0
   spawnInterval: 3
-  spawnCount: 2
-  defaultSpawnCount: 2
+  spawnCount: 6
+  defaultSpawnCount: 6
   spawnCountMultiplier: 1
   multiplierIncreaseCount: 1
   combatManager: {fileID: 4248025401557341219}
@@ -266,9 +266,9 @@ MonoBehaviour:
   spawnedEnemy: {fileID: -5219962289968016653, guid: 858b825aabd5d7446b8773ca35ca8d48, type: 3}
   minimumKillsToIncreaseSpawnCount: 6
   totalKill: 0
-  spawnInterval: 3
-  spawnCount: 2
-  defaultSpawnCount: 2
+  spawnInterval: 5
+  spawnCount: 6
+  defaultSpawnCount: 6
   spawnCountMultiplier: 1
   multiplierIncreaseCount: 1
   combatManager: {fileID: 4248025401557341219}

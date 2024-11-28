@@ -48,8 +48,8 @@ MonoBehaviour:
   minimumKillsToIncreaseSpawnCount: 6
   totalKill: 0
   spawnInterval: 3
-  spawnCount: 2
-  defaultSpawnCount: 2
+  spawnCount: 6
+  defaultSpawnCount: 6
   spawnCountMultiplier: 1
   multiplierIncreaseCount: 1
   combatManager: {fileID: 4248025401557341219, guid: 8f21f10d0518a784ea60c7911399e54a, type: 3}
