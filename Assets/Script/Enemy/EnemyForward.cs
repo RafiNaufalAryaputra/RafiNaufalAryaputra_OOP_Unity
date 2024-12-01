@@ -24,7 +24,11 @@ public class EnemyForward : Enemy
         // Destroy the enemy if it goes off the bottom of the screen
         if (transform.position.y < -5) // Adjust screen boundaries as needed
         {
-            Destroy(gameObject);  // Destroy or return to object pool
+            float spawnSide = Random.Range(-9, 9);
+            vertical = new Vector2(spawnSide, 0);
+            transform.position = new Vector2(spawnSide, 6);
+            rb.velocity = Vector2.down * speed;
         }
     }
 }
+

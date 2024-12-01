@@ -323,7 +323,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90ea3b85bbd76f24f9dbea703747225e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 4025379753520643379}
+  bullet: {fileID: 0}
+  damage: 0
 --- !u!1 &6224794774426227612
 GameObject:
   m_ObjectHideFlags: 0
@@ -522,7 +523,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Level: 4
-  enemySpawner: {fileID: 6337836578230559164, guid: b181c12c3eccde84c8309300b0a23d9a, type: 3}
+  enemySpawner: {fileID: 4653623547034212685, guid: b181c12c3eccde84c8309300b0a23d9a, type: 3}
   combatManager: {fileID: 4248025401557341219, guid: 8f21f10d0518a784ea60c7911399e54a, type: 3}
   bossWeapon: {fileID: 1253482594127199190, guid: f2dc139b4d0778142b320b3852e64b05, type: 3}
   attackInterval: 3
@@ -540,6 +541,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 500
+  health: 0
 --- !u!114 &9074590483369779520
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -565,7 +567,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90ea3b85bbd76f24f9dbea703747225e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 0}
+  bullet: {fileID: 3692161530809932357, guid: e44beea5b63a2b243b859200f0c4de55, type: 3}
+  damage: 10
 --- !u!114 &-8495366599692368423
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -581,3 +584,4 @@ MonoBehaviour:
   blinkingCount: 7
   blinkInterval: 0.1
   blinkMaterial: {fileID: 2100000, guid: 753b22163503332489c7a73b9f76b9fb, type: 2}
+  isInvincible: 0

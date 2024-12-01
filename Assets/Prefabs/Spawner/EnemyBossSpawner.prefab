@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &6462174777402955117
+--- !u!1 &5678538323860221340
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,8 +8,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2671480484127337437}
-  - component: {fileID: 6337836578230559164}
+  - component: {fileID: 3635381697366364972}
+  - component: {fileID: 4653623547034212685}
   m_Layer: 0
   m_Name: EnemyBossSpawner
   m_TagString: Untagged
@@ -17,13 +17,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2671480484127337437
+--- !u!4 &3635381697366364972
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6462174777402955117}
+  m_GameObject: {fileID: 5678538323860221340}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 8.275098, y: 2.2427034, z: 9.028473}
@@ -32,25 +32,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6337836578230559164
+--- !u!114 &4653623547034212685
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6462174777402955117}
+  m_GameObject: {fileID: 5678538323860221340}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3284bac0c0805c0469b948d9ec2f0c04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   spawnedEnemy: {fileID: -5219962289968016653, guid: 858b825aabd5d7446b8773ca35ca8d48, type: 3}
-  minimumKillsToIncreaseSpawnCount: 6
+  minimumKillsToIncreaseSpawnCount: 1
   totalKill: 0
   spawnInterval: 5
   spawnCount: 6
-  defaultSpawnCount: 6
+  defaultSpawnCount: 1
   spawnCountMultiplier: 1
   multiplierIncreaseCount: 1
-  combatManager: {fileID: 4248025401557341219, guid: 8f21f10d0518a784ea60c7911399e54a, type: 3}
+  combatManager: {fileID: 0}
   isSpawning: 1

@@ -181,7 +181,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90ea3b85bbd76f24f9dbea703747225e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 0}
+  bullet: {fileID: 0}
+  damage: 10
 --- !u!114 &4936546307364898986
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -194,7 +195,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfc674ad79bb42445959f2fc27202504, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 10
+  maxHealth: 20
+  health: 0
 --- !u!114 &-8278082684980908271
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -223,3 +225,4 @@ MonoBehaviour:
   blinkingCount: 7
   blinkInterval: 0.1
   blinkMaterial: {fileID: 2100000, guid: 753b22163503332489c7a73b9f76b9fb, type: 2}
+  isInvincible: 0

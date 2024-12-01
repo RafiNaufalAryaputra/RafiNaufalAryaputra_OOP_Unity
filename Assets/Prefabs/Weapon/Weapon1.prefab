@@ -122,7 +122,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shootIntervalInSeconds: 0.1
-  bullet: {fileID: 4508158527044827111}
+  bullet: {fileID: 3692161530809932357, guid: e44beea5b63a2b243b859200f0c4de55, type: 3}
   bulletSpawnPoint: {fileID: 4334901420221940198}
   parentTransform: {fileID: 0}
 --- !u!1001 &985447270297005474
@@ -199,7 +199,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5125229494849283121, guid: e44beea5b63a2b243b859200f0c4de55, type: 3}
       propertyPath: m_Size.y
-      value: 0.5
+      value: 0.33344388
       objectReference: {fileID: 0}
     - target: {fileID: 5125229494849283121, guid: e44beea5b63a2b243b859200f0c4de55, type: 3}
       propertyPath: m_Enabled
@@ -211,7 +211,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5125229494849283121, guid: e44beea5b63a2b243b859200f0c4de55, type: 3}
       propertyPath: m_Offset.y
-      value: 0.14557129
+      value: 0.22884935
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -223,17 +223,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2011500704896088597, guid: e44beea5b63a2b243b859200f0c4de55, type: 3}
   m_PrefabInstance: {fileID: 985447270297005474}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &4508158527044827111 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3692161530809932357, guid: e44beea5b63a2b243b859200f0c4de55, type: 3}
-  m_PrefabInstance: {fileID: 985447270297005474}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ed44669004d4dd40ba998274ade8825, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1972208395086920818
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -248,7 +237,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2843487469865319828, guid: 5978b5a9453ba0546be61cc4799e1050, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.72
+      value: 1.03
       objectReference: {fileID: 0}
     - target: {fileID: 2843487469865319828, guid: 5978b5a9453ba0546be61cc4799e1050, type: 3}
       propertyPath: m_LocalPosition.z

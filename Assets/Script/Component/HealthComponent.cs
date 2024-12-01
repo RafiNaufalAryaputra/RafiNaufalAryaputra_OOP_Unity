@@ -1,26 +1,30 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Collider2D))]
 public class HealthComponent : MonoBehaviour
 {
-    [SerializeField] private int maxHealth;
-    private int health;
-    private void Awake()
-    {
-        health = maxHealth;
-    }
+    [SerializeField] public float maxHealth;
+    [SerializeField] private float health;
 
-    public int GetHealth()
-    {
-        return health;
-    }
+    // Getter untuk health
+    public float Health => health;
 
-    public void Subtract(int amount)
+    // Subtract damage from health
+    private void Start()
     {
-        health -= amount;
+        health = maxHealth; // Initialize health to maxHealth at the start
+    }
+    
+    public void Subtract(float damage)
+    {
+        health -= damage;
+        Debug.Log($"Health reduced by {damage}. Current health: {health}");
         if (health <= 0)
         {
-            Destroy(gameObject);
-//            totalKill++;
+            Destroy(gameObject); // Destroy the object when health is 0 or less
         }
     }
+
 }

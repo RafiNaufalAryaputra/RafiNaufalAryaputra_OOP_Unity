@@ -151,7 +151,7 @@ Transform:
   m_GameObject: {fileID: 147963672}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.26, y: 0, z: 0}
+  m_LocalPosition: {x: 0.72, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -351,7 +351,7 @@ Transform:
   m_GameObject: {fileID: 591665680}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.7819726, y: 1.5932001, z: -8.975315}
+  m_LocalPosition: {x: -3.56, y: 1.5932001, z: -8.975315}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -487,7 +487,7 @@ Transform:
   m_GameObject: {fileID: 608658297}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.32, y: 0, z: 0}
+  m_LocalPosition: {x: -1.22, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -735,7 +735,7 @@ Transform:
   m_GameObject: {fileID: 835596865}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.26, y: 0, z: 0}
+  m_LocalPosition: {x: 4.8, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1017,7 +1017,7 @@ Transform:
   m_GameObject: {fileID: 1392948801}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.25, y: 0, z: 0}
+  m_LocalPosition: {x: 2.76, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1257,6 +1257,50 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3375559312556918784, guid: ca4dc9c78b196914d9f815340a383684, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3886698391931440708, guid: ca4dc9c78b196914d9f815340a383684, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3886698391931440708, guid: ca4dc9c78b196914d9f815340a383684, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.w
+      value: 0.15277778
+      objectReference: {fileID: 0}
+    - target: {fileID: 3886698391931440708, guid: ca4dc9c78b196914d9f815340a383684, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.x
+      value: 0.125
+      objectReference: {fileID: 0}
+    - target: {fileID: 3886698391931440708, guid: ca4dc9c78b196914d9f815340a383684, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.y
+      value: 0.15277778
+      objectReference: {fileID: 0}
+    - target: {fileID: 3886698391931440708, guid: ca4dc9c78b196914d9f815340a383684, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.z
+      value: 0.125
+      objectReference: {fileID: 0}
+    - target: {fileID: 3886698391931440708, guid: ca4dc9c78b196914d9f815340a383684, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.6666667
+      objectReference: {fileID: 0}
+    - target: {fileID: 3886698391931440708, guid: ca4dc9c78b196914d9f815340a383684, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.6666667
+      objectReference: {fileID: 0}
+    - target: {fileID: 5205964864950073621, guid: ca4dc9c78b196914d9f815340a383684, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 3990577377526922219, guid: 03c77d39d30df0144ac920367a1c122f, type: 3}
+    - target: {fileID: 5205964864950073621, guid: ca4dc9c78b196914d9f815340a383684, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5205964864950073621, guid: ca4dc9c78b196914d9f815340a383684, type: 3}
+      propertyPath: m_MaskInteraction
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5205964864950073621, guid: ca4dc9c78b196914d9f815340a383684, type: 3}
+      propertyPath: m_SpriteSortPoint
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5652077395309824750, guid: ca4dc9c78b196914d9f815340a383684, type: 3}
